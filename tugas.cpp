@@ -6,7 +6,7 @@ int main (){
     int i, k, temp;
     int target, A, K, Z;
     
-    cout << "Nomor HP (Belum diurutkan) : ";
+    cout << "nomor HP (Belum diurutkan) : ";
     for(i=0; i<=11; i++){
         cout << array[i] << " ";
     }
@@ -22,13 +22,13 @@ int main (){
         }
     }
     
-    cout << "Hasil urut ascending : ";
+    cout << "hasil urut ascending : ";
     for(i=0; i<=11; i++){
         cout << array[i] << " ";
     }
     cout << "\n";
     
-    cout << "Masukkan nilai angka yang dicari : ";
+    cout << "masukkan nilai angka yang dicari : ";
     cin >> target;
     
     A = 0;
@@ -46,9 +46,9 @@ int main (){
     }
     
     if(target == array[K])
-        { cout << "Data ditemukan di index ke : " << K << endl; }
+        { cout << "data ditemukan di index ke : " << K << endl; }
     else
-        { cout << "Data tidak ditemukan." << endl; }
+        { cout << "data tidak ditemukan" << endl; }
         
     return 0;
 }
