@@ -6,14 +6,14 @@ int main (){
     int i, k, temp;
     int target, A, K, Z;
     
-    cout << "Nomor HP (Belum diurutkan) :";
+    cout << "Nomor HP (Belum diurutkan) : ";
     for(i=0; i<=11; i++){
         cout << array[i] << " ";
     }
     cout << "\n";
     
     for(i=0; i<=11; i++){
-        for(k=11; k>=1; k--){
+        for(k=11; k>=i+1; k--){
             if (array[k] < array[k-1]){
                 temp = array[k];
                 array[k] = array[k-1];
@@ -22,7 +22,7 @@ int main (){
         }
     }
     
-    cout << "Hasil urut ascending :";
+    cout << "Hasil urut ascending : ";
     for(i=0; i<=11; i++){
         cout << array[i] << " ";
     }
@@ -33,8 +33,10 @@ int main (){
     
     A = 0;
     Z = 11;
+    
     while(A <= Z){
         K = (A + Z)/2;
+        
         if(target > array[K])
             { A = K + 1; }
         else if(target < array[K])
